@@ -1,6 +1,6 @@
 #Based on the multi-stage build example by codefresh.io
 #https://codefresh.io/blog/node_docker_multistage/
-
+ENV NEW_RELIC_NO_CONFIG_FILE=true
 # ---- Build Node ----
 FROM node:8.9.1-alpine AS build
 # set working directory
